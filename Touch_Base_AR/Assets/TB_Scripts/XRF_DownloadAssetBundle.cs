@@ -15,10 +15,9 @@ public class XRF_DownloadAssetBundle : MonoBehaviour
     public GameObject loadButtonsInterface;
     public GameObject loadingPanel;
 
-
-    public List<Sprite> SavedMy360Textures = new List<Sprite>();
-    public List<Sprite> SavedMyImageTextures = new List<Sprite>();
-    public List<Texture> SavedMy360Cubemaps = new List<Texture>();
+    public GameObject geometryBase;
+    public GameObject currentInstance;
+    public GameObject exampleDownloadParents;
 
     void Start()
     {
@@ -34,18 +33,6 @@ public class XRF_DownloadAssetBundle : MonoBehaviour
         inputFieldURL.text = inputURL;
     }
 
-    public void DownloadAssetBundle()
-    {
-        //original string to split: https://drive.google.com/file/d/1noS7SYFslxawUa0arX6D2MMuBu3p2VaL/view?usp=sharing
-
-        string[] URLSplit = splitString("/d/", testURL);//this is a helper function to split a string by a string
-        string[] theCodeSplit = splitString("/", URLSplit[1]);//split the string to get just the id code from google drive
-        string theCode = theCodeSplit[0];//split the id code from google drive
-        string finalURL = myURLBASE + theCode;//recreate the google drive url with download
-
-        StartDownload(finalURL);
-    }
-
     public void InputFieldURL()
     {
         inputURL = inputFieldURL.text;
@@ -53,19 +40,39 @@ public class XRF_DownloadAssetBundle : MonoBehaviour
     }
 
 
+    public void InputFieldDownloadButton()
+    {
+        string finalURL = FormatURL(inputURL);
+        StartDownload(finalURL);
+    }
+    public void HardCodedDownloadButton(string hardCodedURL)
+    {
+        string finalURL = FormatURL(hardCodedURL);
+        StartDownload(finalURL);
+    }
+
     public void StartDownload(string theURL)
     {
-        SavedMy360Textures = new List<Sprite>();
-        SavedMyImageTextures = new List<Sprite>();
-        SavedMy360Cubemaps = new List<Texture>();
         Caching.ClearCache();
         StartCoroutine(DownloadModel(theURL));
+    }
+    public string FormatURL(string originalURL)
+    {
+        //original string to split: https://drive.google.com/file/d/1noS7SYFslxawUa0arX6D2MMuBu3p2VaL/view?usp=sharing
+
+        string[] URLSplit = splitString("/d/", originalURL);//this is a helper function to split a string by a string
+        string[] theCodeSplit = splitString("/", URLSplit[1]);//split the string to get just the id code from google drive
+        string theCode = theCodeSplit[0];//split the id code from google drive
+        string finalURL = myURLBASE + theCode;//recreate the google drive url with download
+
+        return finalURL;
     }
 
     IEnumerator DownloadModel(string url)
     {
         cancelInterface.SetActive(true);
         loadButtonsInterface.SetActive(false);
+        exampleDownloadParents.SetActive(false);
 
         WWW www = WWW.LoadFromCacheOrDownload(url, 1);
         yield return www;
@@ -77,45 +84,37 @@ public class XRF_DownloadAssetBundle : MonoBehaviour
 
             if (bundle != null)
             {
+                if(currentInstance)
+                {
+                    Destroy(currentInstance);
+                }
+
                 string[] assets = bundle.GetAllAssetNames();
                 foreach (string asset in assets)
                 {
                     Debug.Log("my asset names: " + asset);
                 }
 
-                AssetBundleRequest requestTextures = bundle.LoadAllAssetsAsync(typeof(Texture));
-                yield return requestTextures;
+                AssetBundleRequest objectRequest = bundle.LoadAllAssetsAsync(typeof(GameObject));
+                // Wait for completion
+                yield return objectRequest;
+                // I don't want to instantiate like this right now
+                GameObject myPrefab = objectRequest.asset as GameObject;
+                currentInstance = Instantiate(myPrefab);
 
-                Object[] MyTex = requestTextures.allAssets;
-                foreach (Object obj in MyTex)
-                {
-                    Texture t = (Texture)obj;
-                    if (obj.name.Contains("360"))
-                    {
-                        if (obj.name.Contains("sprite"))
-                        {
-                            SavedMy360Textures.Add(Sprite.Create(t as Texture2D, new Rect(0, 0, t.width, t.height), new Vector2(0.0f, 0.0f)));
-                        }
-                        else
-                        {
-                            SavedMy360Cubemaps.Add(t);
-                        }
-                    }
-                    else
-                    {
-                        SavedMyImageTextures.Add(Sprite.Create(t as Texture2D, new Rect(0, 0, t.width, t.height), new Vector2(0.0f, 0.0f)));
-                    }
-                }
+                Vector3 instancePos = currentInstance.transform.localPosition;
+                Quaternion instanceRot = currentInstance.transform.localRotation;
+
+                //make a child of parent geometry
+                currentInstance.transform.parent = geometryBase.transform;
+                currentInstance.transform.localPosition = instancePos;
+                currentInstance.transform.localRotation = instanceRot;
 
                 yield return new WaitForSeconds(1);
 
                 Caching.ClearAllCachedVersions(bundle.name);
                 bundle.Unload(false);
                 www.Dispose();
-
-                //done!
-                //cancelInterface.SetActive(false);
-                //loadButtonsInterface.SetActive(false);
 
                 loadingPanel.SetActive(false);
             }
@@ -124,9 +123,11 @@ public class XRF_DownloadAssetBundle : MonoBehaviour
                 Debug.Log("no asset bundle found");
                 cancelInterface.SetActive(false);
                 loadButtonsInterface.SetActive(true);
+                exampleDownloadParents.SetActive(true);
             }
         }
     }
+
 
     public string[] splitString(string needle, string haystack)//this is a helper function to split a string by a string
     {

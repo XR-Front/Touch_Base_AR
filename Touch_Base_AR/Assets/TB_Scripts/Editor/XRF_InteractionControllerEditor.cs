@@ -87,10 +87,5 @@ public class InteractionControllerEditor : Editor
             previousOnCount = script.NumberOfThingsToTurnOn;
             previousOffCount = script.NumberOfThingsToTurnOff;
         }
-        else if (script.myType == XRF_InteractionController.InteractionType.MakeCameraChild)
-        {
-            //make camera child thing
-            script.objectToBecomeParent = (GameObject)EditorGUILayout.ObjectField("Object to Become Camera Parent", script.objectToBecomeParent, typeof(GameObject), true);
-        }
     }
 }

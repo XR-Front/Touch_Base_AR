@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 716694847
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: testprefab01
+      Dependencies: {}

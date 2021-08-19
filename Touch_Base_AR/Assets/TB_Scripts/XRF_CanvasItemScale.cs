@@ -5,7 +5,7 @@ using UnityEngine;
 public class XRF_CanvasItemScale : MonoBehaviour {
 
     private float screenWidth = 1;
-    private float scaleFactor = 800.0f;
+    private float scaleFactor = 1125.0f;
     private float scale;
 
     private void Update()

@@ -7,6 +7,7 @@ public class XRF_CanvasController : MonoBehaviour
     public GameObject downloadInterfaceCanvas;
     public GameObject inputFieldParent;
     public GameObject loadingParent;
+    public GameObject exampleDownloadParents;
 
     void Start()
     {
@@ -14,6 +15,7 @@ public class XRF_CanvasController : MonoBehaviour
 
         inputFieldParent.SetActive(true);
         loadingParent.SetActive(false);
+        exampleDownloadParents.SetActive(true);
     }
 
     public void DownloadInterfaceOn()
@@ -21,6 +23,7 @@ public class XRF_CanvasController : MonoBehaviour
         downloadInterfaceCanvas.SetActive(true);
         inputFieldParent.SetActive(true);
         loadingParent.SetActive(false);
+        exampleDownloadParents.SetActive(true);
     }
 
     public void DownloadInterfaceOff()

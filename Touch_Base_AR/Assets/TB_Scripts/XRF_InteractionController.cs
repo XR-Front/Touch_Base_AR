@@ -14,7 +14,6 @@ public class XRF_InteractionController : MonoBehaviour
         AnimationController,
         SceneChangeController,
         OnOffController,
-        MakeCameraChild
     };
     public InteractionType myType = InteractionType.AnimationController;  // this public var should appear as a drop down
 
@@ -55,25 +54,13 @@ public class XRF_InteractionController : MonoBehaviour
             }
         }
 
-        else if (myType == InteractionType.MakeCameraChild)
-        {
-            theAnimator = objectToBecomeParent.GetComponent<Animator>();
-            if (theAnimator != null)
-            {
-                string animName = theAnimator.runtimeAnimatorController.animationClips[0].name;
-                //Debug.Log("my animation is called: " + animName);
-                //play on start but set to false so it stops
-                theAnimator.Play(animName, 0, 0);
-                theAnimator.enabled = false;
-            }
-        }
     }
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("i bumped into something called: " + other.name);
 
 
-        DoTheThing(other.gameObject);
+        DoTheThing();
 
         /*
         GameObject theCam = other.GetComponentInChildren<Camera>().gameObject;
@@ -83,7 +70,7 @@ public class XRF_InteractionController : MonoBehaviour
         }
         */
     }
-    public void DoTheThing(GameObject myCamera)
+    public void DoTheThing()
     {
         //i clicked on this thing with an interaction controller on it
         //Debug.Log("I did the thing");
@@ -152,47 +139,6 @@ public class XRF_InteractionController : MonoBehaviour
             else
             {
                 OnOff(false, true);
-            }
-        }
-
-        else if (myType == InteractionType.MakeCameraChild)
-        {
-
-            //cam becomes a child of something
-            //animation plays to move something
-
-            //i guess after its done, the camera is no longer a child
-
-            Debug.Log("I called MakeCameraChild");
-
-            //play or pause animation
-            //note, the animator must make a transition to exit if it is not on loop.
-            /*
-            if (!myCamera.GetComponent<Camera>())
-            {
-                //if i am a collider, it will be the parent already
-                myCamera = myCamera.GetComponentInChildren<Camera>().gameObject;
-
-            }
-            */
-            //if it is the camera, it should have a parent. 
-            //GameObject myCameraParent = myCamera.transform.parent.gameObject;
-            GameObject myCameraParent = myCamera;
-            myCameraParent.transform.position = objectToBecomeParent.transform.position;
-            myCameraParent.transform.rotation = objectToBecomeParent.transform.rotation;
-
-            myCameraParent.transform.parent = objectToBecomeParent.transform;
-            
-
-
-            if (theAnimator != null)
-            {
-                string animName = theAnimator.runtimeAnimatorController.animationClips[0].name;
-                Debug.Log("my animation is called: " + animName);
-
-                //play the animation from the beginning
-                theAnimator.enabled = true;
-                theAnimator.Play(animName, 0, 0);
             }
         }
     }

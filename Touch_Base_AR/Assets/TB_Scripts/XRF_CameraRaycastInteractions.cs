@@ -39,17 +39,15 @@ public class XRF_CameraRaycastInteractions : MonoBehaviour
                         XRF_InteractionController[] myInteractions = hitObject.GetComponents<XRF_InteractionController>();
                         foreach (XRF_InteractionController t in myInteractions)
                         {
-                            t.DoTheThing(gameObject);
+                            t.DoTheThing();
                         }
-
-
                     }
                     else if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
                     {
                         XRF_InteractionController[] myInteractions = hitObject.GetComponents<XRF_InteractionController>();
                         foreach (XRF_InteractionController t in myInteractions)
                         {
-                            t.DoTheThing(gameObject);
+                            t.DoTheThing();
                         }
 
                     }

@@ -16,10 +16,14 @@ public class XRF_ARAnchorTwoTouch : MonoBehaviour
     private bool firstAnchorRegistered;
     public GameObject ARSessionOrigin;
 
+    public GameObject SuggestionText;
+
 
     void Start()
     {
         ARObject.SetActive(false);
+        SuggestionText.SetActive(false);
+        setAnchorButton.SetActive(true);
 
         setAnchorStart = false;
         firstAnchorRegistered = false;
@@ -68,22 +72,20 @@ public class XRF_ARAnchorTwoTouch : MonoBehaviour
 
                 if (!firstAnchorRegistered)
                 {
+                    SuggestionText.GetComponent<Text>().text = "TAP SCREEN TO SET \"AR ORIGIN\" ON THE GROUND";
+
+
 
                     //TAP WILL PLACE THE ORIGIN
                     if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
                     {
-
-                        ar_3D_marker.transform.position = hits[0].pose.position;
-                        ar_3D_marker.transform.rotation = hits[0].pose.rotation;
-                        ar_3D_marker.SetActive(true);
-
-                        firstAnchorRegistered = true;
-
+                        FirstTouch(hits);
                     }
 
                 }
                 else
                 {
+                    SuggestionText.GetComponent<Text>().text = "TAP SCREEN TO SET \"AR DIRECTION\" ON THE GROUND";
 
                     //this will make the 3d marker "look at" the current position of the raycast
                     Vector3 targetPostition = new Vector3(hits[0].pose.position.x, ar_3D_marker.transform.position.y, hits[0].pose.position.z);
@@ -93,30 +95,15 @@ public class XRF_ARAnchorTwoTouch : MonoBehaviour
                     //TAP WILL PLACE THE ACTUAL ANCHOR
                     if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
                     {
-
-                        ARObject.transform.position = ar_3D_marker.transform.position;
-                        ARObject.transform.rotation = ar_3D_marker.transform.rotation;
-                        ARObject.SetActive(true);
-                        ar_2D_Marker.SetActive(false);
-                        ar_3D_marker.SetActive(false);
-                        setAnchorStart = false;
-                        firstAnchorRegistered = false;
-
-                        ARSessionOrigin.GetComponent<ARPlaneManager>().enabled = false;
-                        ARSessionOrigin.GetComponent<ARPointCloudManager>().enabled = false;
-                        ARSessionOrigin.GetComponent<ARRaycastManager>().enabled = false;
-
-                        GameObject[] arPlanes = GameObject.FindGameObjectsWithTag("AR_Plane");
-                        foreach (GameObject g in arPlanes)
-                        {
-                            g.SetActive(false);
-                        }
+                        SecondTouch();
                     }
                 }
 
             }
             else
             {
+                SuggestionText.GetComponent<Text>().text = "SLOWLY LOOK AROUND A FLAT, OPEN AREA WITH YOUR CAMERA";
+
 
                 if (!ar_2D_Marker.activeInHierarchy)
                 {
@@ -126,9 +113,45 @@ public class XRF_ARAnchorTwoTouch : MonoBehaviour
         }
     }
 
+    public void FirstTouch(List<ARRaycastHit> hits)
+    {
+        ar_3D_marker.transform.position = hits[0].pose.position;
+        ar_3D_marker.transform.rotation = hits[0].pose.rotation;
+        ar_3D_marker.SetActive(true);
+
+        firstAnchorRegistered = true;
+    }
+
+    public void SecondTouch()
+    {
+
+        ARObject.transform.position = ar_3D_marker.transform.position;
+        ARObject.transform.rotation = ar_3D_marker.transform.rotation;
+        ARObject.SetActive(true);
+        ar_2D_Marker.SetActive(false);
+        ar_3D_marker.SetActive(false);
+        setAnchorStart = false;
+        firstAnchorRegistered = false;
+        SuggestionText.SetActive(false);
+        setAnchorButton.SetActive(true);
+
+
+        ARSessionOrigin.GetComponent<ARPlaneManager>().enabled = false;
+        ARSessionOrigin.GetComponent<ARPointCloudManager>().enabled = false;
+        ARSessionOrigin.GetComponent<ARRaycastManager>().enabled = false;
+
+        GameObject[] arPlanes = GameObject.FindGameObjectsWithTag("AR_Plane");
+        foreach (GameObject g in arPlanes)
+        {
+            g.SetActive(false);
+        }
+    }
+
+
     public void StartARAnchor()
     {
         ARObject.SetActive(false);
+        SuggestionText.SetActive(true);
 
         setAnchorStart = true;
         firstAnchorRegistered = false;
