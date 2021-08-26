@@ -12,11 +12,13 @@ public class XRF_PlatformManager : MonoBehaviour
 
 #if UNITY_IOS
 
+        Debug.Log("IOS is active");
         iOSExampleDownloads.SetActive(true);
         androidExampleDownloads.SetActive(false);
 
 #elif UNITY_ANDROID
 
+        Debug.Log("Android is active");
         iOSExampleDownloads.SetActive(false);
         androidExampleDownloads.SetActive(true);
 

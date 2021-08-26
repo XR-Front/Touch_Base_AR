@@ -15,6 +15,7 @@ public class XRF_DownloadAssetBundle : MonoBehaviour
     public GameObject cancelInterface;
     public GameObject loadButtonsInterface;
     public GameObject loadingPanel;
+    public GameObject errorInterface;
 
     public GameObject geometryBase;
     public GameObject currentInstance;
@@ -24,6 +25,7 @@ public class XRF_DownloadAssetBundle : MonoBehaviour
     {
         cancelInterface.SetActive(false);
         loadButtonsInterface.SetActive(true);
+        errorInterface.SetActive(false);
 
         inputURL = "";
         if (PlayerPrefs.HasKey("myURL"))
@@ -38,20 +40,30 @@ public class XRF_DownloadAssetBundle : MonoBehaviour
     {
         inputURL = inputFieldURL.text;
         PlayerPrefs.SetString("myURL", inputURL);
+
+        errorInterface.SetActive(false);
     }
 
 
     public void InputFieldDownloadButton()
     {
         //checks for validity of url, then try downloads url
-        if(!string.IsNullOrEmpty(inputURL))
+        if (!string.IsNullOrEmpty(inputURL))
         {
             Uri result;
-            if(Uri.TryCreate(inputURL, UriKind.Absolute, out result))
+            if (Uri.TryCreate(inputURL, UriKind.Absolute, out result))
             {
                 string finalURL = FormatURL(inputURL);
                 StartDownload(finalURL);
             }
+            else
+            {
+                errorInterface.SetActive(true);
+            }
+        }
+        else
+        {
+            errorInterface.SetActive(true);
         }
     }
     public void HardCodedDownloadButton(string hardCodedURL)

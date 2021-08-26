@@ -37,7 +37,7 @@ public class XRF_ARAnchorTwoTouch : MonoBehaviour
 
         ARSessionOrigin.GetComponent<ARRaycastManager>().enabled = false;
         ARSessionOrigin.GetComponent<ARPlaneManager>().enabled = false;
-        ARSessionOrigin.GetComponent<ARPointCloudManager>().enabled = false;
+        //ARSessionOrigin.GetComponent<ARPointCloudManager>().enabled = false;
     }
 
     void Update()
@@ -137,7 +137,7 @@ public class XRF_ARAnchorTwoTouch : MonoBehaviour
 
 
         ARSessionOrigin.GetComponent<ARPlaneManager>().enabled = false;
-        ARSessionOrigin.GetComponent<ARPointCloudManager>().enabled = false;
+        //ARSessionOrigin.GetComponent<ARPointCloudManager>().enabled = false;
         ARSessionOrigin.GetComponent<ARRaycastManager>().enabled = false;
 
         GameObject[] arPlanes = GameObject.FindGameObjectsWithTag("AR_Plane");
@@ -163,7 +163,7 @@ public class XRF_ARAnchorTwoTouch : MonoBehaviour
 
         ARSessionOrigin.GetComponent<ARRaycastManager>().enabled = true;
         ARSessionOrigin.GetComponent<ARPlaneManager>().enabled = true;
-        ARSessionOrigin.GetComponent<ARPointCloudManager>().enabled = true;
+        //ARSessionOrigin.GetComponent<ARPointCloudManager>().enabled = true;
 
         setAnchorButton.SetActive(false);
     }
