@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class XRF_DownloadAssetBundle : MonoBehaviour
 {
@@ -42,13 +43,29 @@ public class XRF_DownloadAssetBundle : MonoBehaviour
 
     public void InputFieldDownloadButton()
     {
-        string finalURL = FormatURL(inputURL);
-        StartDownload(finalURL);
+        //checks for validity of url, then try downloads url
+        if(!string.IsNullOrEmpty(inputURL))
+        {
+            Uri result;
+            if(Uri.TryCreate(inputURL, UriKind.Absolute, out result))
+            {
+                string finalURL = FormatURL(inputURL);
+                StartDownload(finalURL);
+            }
+        }
     }
     public void HardCodedDownloadButton(string hardCodedURL)
     {
-        string finalURL = FormatURL(hardCodedURL);
-        StartDownload(finalURL);
+        //checks for validity of url, then try downloads url
+        if (!string.IsNullOrEmpty(hardCodedURL))
+        {
+            Uri result;
+            if (Uri.TryCreate(hardCodedURL, UriKind.Absolute, out result))
+            {
+                string finalURL = FormatURL(hardCodedURL);
+                StartDownload(finalURL);
+            }
+        }
     }
 
     public void StartDownload(string theURL)
