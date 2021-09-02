@@ -70,6 +70,7 @@ public class XRF_InteractionController : MonoBehaviour
         }
         */
     }
+
     public void DoTheThing()
     {
         //i clicked on this thing with an interaction controller on it
@@ -82,6 +83,50 @@ public class XRF_InteractionController : MonoBehaviour
             string animName = theAnimator.runtimeAnimatorController.animationClips[0].name;
             Debug.Log("my animation is called: " + animName);
 
+
+            Debug.Log("my animator state info normalized time: " + theAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime); //< if this is at 1 its done
+            Debug.Log("my animator state info is loop true: " + theAnimator.runtimeAnimatorController.animationClips[0].isLooping); //< if this is at 1 its done
+
+            
+            
+
+            if(theAnimator.runtimeAnimatorController.animationClips[0].isLooping) //if loop is true
+            {
+                if (theAnimator.isActiveAndEnabled) //if i am currently on, turn off
+                {
+                    Debug.Log("my animation was playing and enabled, it will stop now");
+                    theAnimator.enabled = false;
+                }
+                else //if i am currently off, turn on
+                {
+                    theAnimator.enabled = true;
+                }
+            }
+            else //loop is false
+            {
+                if (theAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1) //if i am done with my animation sequence (at the end)
+                {
+                    theAnimator.Play(animName, 0, 0);
+                    theAnimator.enabled = true;
+                }
+                else //either i am paused or i am playing and not done
+                {
+                    if (theAnimator.isActiveAndEnabled) //if i am currently on, turn off
+                    {
+                        Debug.Log("my animation was playing and enabled, it will stop now");
+                        theAnimator.enabled = false;
+                    }
+                    else //if i am currently off, turn on
+                    {
+                        theAnimator.enabled = true;
+                    }
+                }
+            }
+
+
+
+
+            /*
             if (theAnimator.GetCurrentAnimatorStateInfo(0).IsName(animName))
             {
                 Debug.Log("hey my animation is in the middle of playing or on loop");
@@ -93,6 +138,13 @@ public class XRF_InteractionController : MonoBehaviour
                 }
                 else
                 {
+                    if( theAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
+                    {
+                        theAnimator.Play(animName, 0, 0);
+                    }
+                    //if at the end, restart
+                    //else below
+
                     Debug.Log("my animation was in the middle of playing playing but not enabled");
                     theAnimator.enabled = true;
                 }
@@ -104,6 +156,7 @@ public class XRF_InteractionController : MonoBehaviour
                 theAnimator.enabled = true;
                 theAnimator.Play(animName, 0, 0);
             }
+            */
 
         }
         else if (myType == InteractionType.SceneChangeController)
