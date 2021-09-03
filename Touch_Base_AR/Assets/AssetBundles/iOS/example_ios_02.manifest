@@ -1,0 +1,47 @@
+ManifestFileVersion: 0
+CRC: 2875616015
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 74be5e880f5d768a2755994db1db36a2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d50f939b5a3e43aa0931e2f131e4bb12
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 102
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: f60582c3f01b7674ca91ca3245007015, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/TB_PrefabBundles/Example_iOS_02_Door Handle.prefab
+Dependencies: []

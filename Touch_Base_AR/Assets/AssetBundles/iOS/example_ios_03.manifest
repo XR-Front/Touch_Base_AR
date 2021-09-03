@@ -1,0 +1,43 @@
+ManifestFileVersion: 0
+CRC: 3327385655
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0aa16ba1ae30f1aba72b094b2a28434d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9faff97bbeb3bb6b7710f16fa37565ba
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: f60582c3f01b7674ca91ca3245007015, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/TB_PrefabBundles/Example_iOS_03_Flange.prefab
+Dependencies: []

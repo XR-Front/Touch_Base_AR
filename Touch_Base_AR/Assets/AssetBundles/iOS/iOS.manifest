@@ -1,7 +1,16 @@
 ManifestFileVersion: 0
-CRC: 3578118744
+CRC: 1058661136
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: testprefab01
+      Name: example_ios_00
+      Dependencies: {}
+    Info_1:
+      Name: example_ios_01
+      Dependencies: {}
+    Info_2:
+      Name: example_ios_02
+      Dependencies: {}
+    Info_3:
+      Name: example_ios_03
       Dependencies: {}
