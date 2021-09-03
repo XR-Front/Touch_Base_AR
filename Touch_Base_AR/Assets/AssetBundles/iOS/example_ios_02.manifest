@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2875616015
+CRC: 2365750767
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 74be5e880f5d768a2755994db1db36a2
+    Hash: 297fbe9ab01adba095e147e36cd364df
   TypeTreeHash:
     serializedVersion: 2
     Hash: d50f939b5a3e43aa0931e2f131e4bb12
@@ -43,5 +43,5 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/TB_PrefabBundles/Example_iOS_02_Door Handle.prefab
+- Assets/TB_PrefabBundles/IOS/Example_iOS_02_Door Handle.prefab
 Dependencies: []

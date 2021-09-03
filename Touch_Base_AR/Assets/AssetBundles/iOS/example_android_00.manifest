@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3761867731
+CRC: 2473314587
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: b9d580f596b447aa342bd710697328b5
+    Hash: 5d53753ddb2f01ebfd8295a57e7717d4
   TypeTreeHash:
     serializedVersion: 2
     Hash: 804fcc431de41019e245ad05a53f6b27
@@ -47,5 +47,5 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/TB_PrefabBundles/IOS/Example_iOS_00_Intro.prefab
+- Assets/TB_PrefabBundles/Android/Example_Android_00_Intro.prefab
 Dependencies: []

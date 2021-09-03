@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1058661136
+CRC: 1333858814
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -13,4 +13,28 @@ AssetBundleManifest:
       Dependencies: {}
     Info_3:
       Name: example_ios_03
+      Dependencies: {}
+    Info_4:
+      Name: example_android_00
+      Dependencies: {}
+    Info_5:
+      Name: example_android_05
+      Dependencies: {}
+    Info_6:
+      Name: example_android_04
+      Dependencies: {}
+    Info_7:
+      Name: example_android_03
+      Dependencies: {}
+    Info_8:
+      Name: example_android_02
+      Dependencies: {}
+    Info_9:
+      Name: example_ios_05
+      Dependencies: {}
+    Info_10:
+      Name: example_android_01
+      Dependencies: {}
+    Info_11:
+      Name: example_ios_04
       Dependencies: {}

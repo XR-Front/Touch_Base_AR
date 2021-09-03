@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3327385655
+CRC: 191070148
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 0aa16ba1ae30f1aba72b094b2a28434d
+    Hash: 90b6bb37e8f11bfb3208d3c9dbf30ad3
   TypeTreeHash:
     serializedVersion: 2
     Hash: 9faff97bbeb3bb6b7710f16fa37565ba
@@ -39,5 +39,5 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/TB_PrefabBundles/Example_iOS_03_Flange.prefab
+- Assets/TB_PrefabBundles/IOS/Example_iOS_03_Flange.prefab
 Dependencies: []
