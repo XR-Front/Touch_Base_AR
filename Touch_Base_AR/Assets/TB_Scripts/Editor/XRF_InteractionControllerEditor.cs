@@ -18,18 +18,8 @@ public class InteractionControllerEditor : Editor
         //highlight material if raycast is selected!
         if (script.gameObject.GetComponent<Collider>().isTrigger == false)
         {
-            if (script.HighlightMaterial == null)
-            {
-                Material defaultMaterial = new Material(Shader.Find("Standard"));
-                defaultMaterial.color = Color.cyan;
-                defaultMaterial.name = "Color Cyan";
+            script.HighlightMaterial = (Material)EditorGUILayout.ObjectField("Highlight Material", script.HighlightMaterial, typeof(Material), true);
 
-                script.HighlightMaterial = (Material)EditorGUILayout.ObjectField("Highlight Material", defaultMaterial, typeof(Material), true);
-            }
-            else
-            {
-                script.HighlightMaterial = (Material)EditorGUILayout.ObjectField("Highlight Material", script.HighlightMaterial, typeof(Material), true);
-            }
         }
 
 

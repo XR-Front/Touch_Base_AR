@@ -93,7 +93,7 @@ public class XRF_CameraRaycastInteractions : MonoBehaviour
         {
             if (!dontHighlight)
             {
-                tempMaterialsHigh = highlightThis.transform.gameObject.GetComponent<Renderer>().sharedMaterials;
+                tempMaterialsHigh = highlightThis.transform.gameObject.GetComponent<MeshRenderer>().sharedMaterials;
                 matsHigh = new Material[tempMaterialsHigh.Length];
 
                 Material highlightMaterial = highlightThis.GetComponent<XRF_InteractionController>().HighlightMaterial;
@@ -102,7 +102,7 @@ public class XRF_CameraRaycastInteractions : MonoBehaviour
                 {
                     matsHigh[i] = highlightMaterial;
                 }
-                highlightThis.transform.gameObject.GetComponent<Renderer>().sharedMaterials = matsHigh;
+                highlightThis.transform.gameObject.GetComponent<MeshRenderer>().sharedMaterials = matsHigh;
                 dontHighlight = true;
             }
         }
@@ -112,7 +112,7 @@ public class XRF_CameraRaycastInteractions : MonoBehaviour
         MeshRenderer rend = unHighlightThis.GetComponent<MeshRenderer>();
         if (rend != null)
         {
-            unHighlightThis.transform.gameObject.GetComponent<Renderer>().sharedMaterials = tempMaterialsHigh;
+            unHighlightThis.transform.gameObject.GetComponent<MeshRenderer>().sharedMaterials = tempMaterialsHigh;
             dontHighlight = false;
         }
     }
