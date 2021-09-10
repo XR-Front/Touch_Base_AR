@@ -13,11 +13,26 @@ public class XRF_CameraRaycastInteractions : MonoBehaviour
     private GameObject tempSelectedObject;
     private Ray myRay;
 
+
+    [System.Serializable]
+    public enum ClickType // your custom enumeration
+    {
+        MouseClick,
+        ARCamera,
+    };
+    public ClickType camType = ClickType.MouseClick;  // this public var should appear as a drop down
+
     void Update()
     {
-        
-            myRay = new Ray(raycastCamera.transform.position, raycastCamera.transform.forward);
 
+        if (camType == ClickType.MouseClick)
+        {
+            myRay = raycastCamera.GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
+        }
+        else if(camType == ClickType.ARCamera)
+        {
+            myRay = new Ray(raycastCamera.transform.position, raycastCamera.transform.forward);
+        }
 
 
         if (!IsPointerOverUIObject())
@@ -62,7 +77,6 @@ public class XRF_CameraRaycastInteractions : MonoBehaviour
                 RayMissed();
             }
         }
-       
     }
     void RayHit(GameObject touchObject)
     {
