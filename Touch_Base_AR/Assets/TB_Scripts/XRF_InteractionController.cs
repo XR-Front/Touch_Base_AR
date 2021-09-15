@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class XRF_InteractionController : MonoBehaviour
 {
-    //!!rename this "InteractionController" after class
 
     public Material HighlightMaterial;
 
@@ -59,16 +58,7 @@ public class XRF_InteractionController : MonoBehaviour
     {
         Debug.Log("i bumped into something called: " + other.name);
 
-
         DoTheThing();
-
-        /*
-        GameObject theCam = other.GetComponentInChildren<Camera>().gameObject;
-        if(theCam!=null)
-        {
-            DoTheThing(theCam);
-        }
-        */
     }
 
     public void DoTheThing()
@@ -83,12 +73,8 @@ public class XRF_InteractionController : MonoBehaviour
             string animName = theAnimator.runtimeAnimatorController.animationClips[0].name;
             Debug.Log("my animation is called: " + animName);
 
-
             Debug.Log("my animator state info normalized time: " + theAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime); //< if this is at 1 its done
             Debug.Log("my animator state info is loop true: " + theAnimator.runtimeAnimatorController.animationClips[0].isLooping); //< if this is at 1 its done
-
-            
-            
 
             if(theAnimator.runtimeAnimatorController.animationClips[0].isLooping) //if loop is true
             {
@@ -122,42 +108,6 @@ public class XRF_InteractionController : MonoBehaviour
                     }
                 }
             }
-
-
-
-
-            /*
-            if (theAnimator.GetCurrentAnimatorStateInfo(0).IsName(animName))
-            {
-                Debug.Log("hey my animation is in the middle of playing or on loop");
-
-                if (theAnimator.isActiveAndEnabled)
-                {
-                    Debug.Log("my animation was playing and enabled, it will stop now");
-                    theAnimator.enabled = false;
-                }
-                else
-                {
-                    if( theAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
-                    {
-                        theAnimator.Play(animName, 0, 0);
-                    }
-                    //if at the end, restart
-                    //else below
-
-                    Debug.Log("my animation was in the middle of playing playing but not enabled");
-                    theAnimator.enabled = true;
-                }
-            }
-            else
-            {
-                Debug.Log("hey my animation ended, I'm going to start it over");
-                //this will be called if the animation has completed only.
-                theAnimator.enabled = true;
-                theAnimator.Play(animName, 0, 0);
-            }
-            */
-
         }
         else if (myType == InteractionType.SceneChangeController)
         {

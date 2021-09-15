@@ -1,0 +1,41 @@
+ManifestFileVersion: 0
+CRC: 2422253556
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f4c07fab31890dd4e804e612c929e10d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5b0bf7c73a64bd8e6241c5bb5feb0f2d
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: af408ceca5abffe4fac1845625078add, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/TB_PrefabBundles/IOS/Example_iOS_particles.prefab
+Dependencies: []

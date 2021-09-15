@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1333858814
+CRC: 2594091537
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -37,4 +37,16 @@ AssetBundleManifest:
       Dependencies: {}
     Info_11:
       Name: example_ios_04
+      Dependencies: {}
+    Info_12:
+      Name: ios_inclass_flange
+      Dependencies: {}
+    Info_13:
+      Name: ios_inclass_flange2
+      Dependencies: {}
+    Info_14:
+      Name: ios_particles
+      Dependencies: {}
+    Info_15:
+      Name: example_ios_intro quilted
       Dependencies: {}
