@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 2594091537
+CRC: 1194280288
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -50,3 +50,20 @@ AssetBundleManifest:
     Info_15:
       Name: example_ios_intro quilted
       Dependencies: {}
+    Info_16:
+      Name: android_dz_3
+      Dependencies: {}
+    Info_17:
+      Name: jeff edit_ios_dz beam
+      Dependencies: {}
+    Info_18:
+      Name: android_perffacade
+      Dependencies: {}
+    Info_19:
+      Name: dn_perffacade_android
+      Dependencies:
+        Dependency_0: android_perffacade
+    Info_20:
+      Name: jeff edit_ios_dn_panel
+      Dependencies:
+        Dependency_0: android_perffacade

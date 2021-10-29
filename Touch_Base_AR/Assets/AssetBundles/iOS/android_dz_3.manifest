@@ -1,0 +1,45 @@
+ManifestFileVersion: 0
+CRC: 2167090843
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7be59298d3c4c617ce898a37958e2f6f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 53784972daf3f832cc14824b1363416e
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: f60582c3f01b7674ca91ca3245007015, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AssetBundles/Android/DZ PACKAGE.prefab
+Dependencies: []
