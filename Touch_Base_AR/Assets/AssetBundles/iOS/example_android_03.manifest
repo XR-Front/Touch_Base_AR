@@ -1,12 +1,15 @@
 ManifestFileVersion: 0
-CRC: 747855699
+CRC: 1134219198
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 6d93a59b8e08a2f8c698e2560ef2f86b
+    Hash: 13047919260ef5e36bb79a484f69d2cf
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 9faff97bbeb3bb6b7710f16fa37565ba
+    Hash: ff7b0c14976935571ec7fb1b1c72ab63
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 13047919260ef5e36bb79a484f69d2cf
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -37,7 +40,9 @@ ClassTypes:
   Script: {fileID: 11500000, guid: f60582c3f01b7674ca91ca3245007015, type: 3}
 - Class: 115
   Script: {instanceID: 0}
-SerializeReferenceClassIdentifiers: []
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: XRF_InteractionController/InteractionType
 Assets:
 - Assets/TB_PrefabBundles/Android/Example_Android_03_Flange.prefab
 Dependencies: []

@@ -1,12 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3939077980
+CRC: 30339427
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: beb860911a3ff74d6c6978f553604d91
+    Hash: f5ead4ca10688f3c05711720a737b29f
   TypeTreeHash:
     serializedVersion: 2
-    Hash: d50f939b5a3e43aa0931e2f131e4bb12
+    Hash: 6cbb5fb08b74f158fae8e299ef85b863
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: f5ead4ca10688f3c05711720a737b29f
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -41,7 +44,9 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 128
   Script: {instanceID: 0}
-SerializeReferenceClassIdentifiers: []
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: XRF_InteractionController/InteractionType
 Assets:
 - Assets/TB_PrefabBundles/IOS/Example_iOS_01_Table.prefab
 Dependencies: []

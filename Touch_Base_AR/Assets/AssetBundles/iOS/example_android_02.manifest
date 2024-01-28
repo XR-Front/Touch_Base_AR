@@ -1,12 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3975496256
+CRC: 2373383504
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 779dbb4f9f2122dff8414f9d418151ac
+    Hash: 3a6ef76f08787a82ba0ffca1b4580c83
   TypeTreeHash:
     serializedVersion: 2
-    Hash: d50f939b5a3e43aa0931e2f131e4bb12
+    Hash: 6cbb5fb08b74f158fae8e299ef85b863
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 3a6ef76f08787a82ba0ffca1b4580c83
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -41,7 +44,9 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 128
   Script: {instanceID: 0}
-SerializeReferenceClassIdentifiers: []
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: XRF_InteractionController/InteractionType
 Assets:
 - Assets/TB_PrefabBundles/Android/Example_Android_02_Door Handle.prefab
 Dependencies: []

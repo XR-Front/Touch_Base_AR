@@ -1,69 +1,73 @@
 ManifestFileVersion: 0
-CRC: 1194280288
+CRC: 1888241583
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: example_ios_00
-      Dependencies: {}
-    Info_1:
-      Name: example_ios_01
-      Dependencies: {}
-    Info_2:
-      Name: example_ios_02
-      Dependencies: {}
-    Info_3:
       Name: example_ios_03
       Dependencies: {}
-    Info_4:
-      Name: example_android_00
-      Dependencies: {}
-    Info_5:
-      Name: example_android_05
-      Dependencies: {}
-    Info_6:
+    Info_1:
       Name: example_android_04
       Dependencies: {}
-    Info_7:
-      Name: example_android_03
+    Info_2:
+      Name: ios_inclass_flange2
       Dependencies: {}
-    Info_8:
+    Info_3:
+      Name: example_ios_01
+      Dependencies: {}
+    Info_4:
+      Name: ardebugmenu
+      Dependencies: {}
+    Info_5:
       Name: example_android_02
       Dependencies: {}
+    Info_6:
+      Name: example_ios_intro quilted
+      Dependencies: {}
+    Info_7:
+      Name: dn_perffacade_android
+      Dependencies: {}
+    Info_8:
+      Name: jeff edit_ios_dz beam
+      Dependencies: {}
     Info_9:
-      Name: example_ios_05
+      Name: example_android_00
       Dependencies: {}
     Info_10:
-      Name: example_android_01
+      Name: example_ios_04
       Dependencies: {}
     Info_11:
-      Name: example_ios_04
+      Name: example_android_05
       Dependencies: {}
     Info_12:
       Name: ios_inclass_flange
       Dependencies: {}
     Info_13:
-      Name: ios_inclass_flange2
+      Name: example_ios_02
       Dependencies: {}
     Info_14:
-      Name: ios_particles
+      Name: example_android_03
       Dependencies: {}
     Info_15:
-      Name: example_ios_intro quilted
+      Name: ios_particles
       Dependencies: {}
     Info_16:
-      Name: android_dz_3
+      Name: example_ios_00
       Dependencies: {}
     Info_17:
-      Name: jeff edit_ios_dz beam
+      Name: example_android_01
       Dependencies: {}
     Info_18:
-      Name: android_perffacade
+      Name: example_ios_05
       Dependencies: {}
     Info_19:
-      Name: dn_perffacade_android
-      Dependencies:
-        Dependency_0: android_perffacade
+      Name: android_dz_3
+      Dependencies: {}
     Info_20:
+      Name: android_perffacade
+      Dependencies: {}
+    Info_21:
       Name: jeff edit_ios_dn_panel
-      Dependencies:
-        Dependency_0: android_perffacade
+      Dependencies: {}
+    Info_22:
+      Name: jeff_simpletableexample
+      Dependencies: {}

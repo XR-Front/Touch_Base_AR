@@ -1,12 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3876352409
+CRC: 999558678
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 748ef8b9bc1206ad33c49b46daba3ee0
+    Hash: 34488b94f7b3bf8d7b01b118869bebe6
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 0a0b07a8304a44b13b5c1e03699a88c5
+    Hash: c960c3f82f42ab00aa3125a086aa11e3
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 34488b94f7b3bf8d7b01b118869bebe6
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -43,8 +46,9 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 128
   Script: {instanceID: 0}
-SerializeReferenceClassIdentifiers: []
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: XRF_InteractionController/InteractionType
 Assets:
 - Assets/TB_PrefabBundles/IOS/Jeff Edit_iOS_DN_Panel.prefab
-Dependencies:
-- C:/Users/Designlab/Documents/Unity Github/Touch_Base_AR/Touch_Base_AR/Assets/AssetBundles/iOS/android_perffacade
+Dependencies: []

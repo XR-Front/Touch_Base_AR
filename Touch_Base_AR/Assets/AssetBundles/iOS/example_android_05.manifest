@@ -1,12 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3040123873
+CRC: 2780313463
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 204274f74027169322a594e9ae4ac9ca
+    Hash: 9fa64794d620657950330f7975482ff8
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 2fa7ae2d93ba41153a7204a2f85da968
+    Hash: b8089915de379307fd7f78d9bba22592
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 9fa64794d620657950330f7975482ff8
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -37,7 +40,9 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 128
   Script: {instanceID: 0}
-SerializeReferenceClassIdentifiers: []
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: XRF_InteractionController/InteractionType
 Assets:
 - Assets/TB_PrefabBundles/Android/Example_Android_05_Drywall.prefab
 Dependencies: []

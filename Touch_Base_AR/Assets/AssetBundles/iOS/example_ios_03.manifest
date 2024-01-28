@@ -1,12 +1,15 @@
 ManifestFileVersion: 0
-CRC: 191070148
+CRC: 1395880364
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 90b6bb37e8f11bfb3208d3c9dbf30ad3
+    Hash: b81007c1381dfc8365efb96703e1b41c
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 9faff97bbeb3bb6b7710f16fa37565ba
+    Hash: ff7b0c14976935571ec7fb1b1c72ab63
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: b81007c1381dfc8365efb96703e1b41c
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -37,7 +40,9 @@ ClassTypes:
   Script: {fileID: 11500000, guid: f60582c3f01b7674ca91ca3245007015, type: 3}
 - Class: 115
   Script: {instanceID: 0}
-SerializeReferenceClassIdentifiers: []
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: XRF_InteractionController/InteractionType
 Assets:
 - Assets/TB_PrefabBundles/IOS/Example_iOS_03_Flange.prefab
 Dependencies: []

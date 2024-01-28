@@ -1,12 +1,15 @@
 ManifestFileVersion: 0
-CRC: 1765259002
+CRC: 3106988793
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 95908d415201e67c7444656ba3447765
+    Hash: 76856b451cebd2bf55ade85184d1b2e2
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 0a0b07a8304a44b13b5c1e03699a88c5
+    Hash: c960c3f82f42ab00aa3125a086aa11e3
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 76856b451cebd2bf55ade85184d1b2e2
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -43,8 +46,9 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 128
   Script: {instanceID: 0}
-SerializeReferenceClassIdentifiers: []
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: XRF_InteractionController/InteractionType
 Assets:
-- Assets/TB_Prefabs/FacadeParent.prefab
-Dependencies:
-- C:/Users/Designlab/Documents/Unity Github/Touch_Base_AR/Touch_Base_AR/Assets/AssetBundles/iOS/android_perffacade
+- Assets/_Student Imports/archive/FacadeParent.prefab
+Dependencies: []

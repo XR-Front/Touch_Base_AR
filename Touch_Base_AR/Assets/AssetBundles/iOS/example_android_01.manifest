@@ -1,12 +1,15 @@
 ManifestFileVersion: 0
-CRC: 2992126238
+CRC: 711402895
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 19a574695af1704cdae152ea11d9f31b
+    Hash: e8396743bb6cfcb9da0e54d394896a90
   TypeTreeHash:
     serializedVersion: 2
-    Hash: d50f939b5a3e43aa0931e2f131e4bb12
+    Hash: 6cbb5fb08b74f158fae8e299ef85b863
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: e8396743bb6cfcb9da0e54d394896a90
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -41,7 +44,9 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 128
   Script: {instanceID: 0}
-SerializeReferenceClassIdentifiers: []
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: XRF_InteractionController/InteractionType
 Assets:
 - Assets/TB_PrefabBundles/Android/Example_Android_01_Table.prefab
 Dependencies: []

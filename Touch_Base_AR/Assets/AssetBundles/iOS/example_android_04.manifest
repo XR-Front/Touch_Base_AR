@@ -1,12 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3018738843
+CRC: 1601136411
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 8de29b921f50c4c0c9c772fe6f1f65a6
+    Hash: 2f1b7c53c719c557b4cd16356a87792a
   TypeTreeHash:
     serializedVersion: 2
-    Hash: aade8ad011c40f70212ae0ed3f02c608
+    Hash: ae3bdc2dfa44f64c84a2a65eb67471e0
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 2f1b7c53c719c557b4cd16356a87792a
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -35,7 +38,9 @@ ClassTypes:
   Script: {fileID: 11500000, guid: f60582c3f01b7674ca91ca3245007015, type: 3}
 - Class: 115
   Script: {instanceID: 0}
-SerializeReferenceClassIdentifiers: []
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: XRF_InteractionController/InteractionType
 Assets:
 - Assets/TB_PrefabBundles/Android/Example_Android_04_Timber Joint.prefab
 Dependencies: []

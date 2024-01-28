@@ -1,12 +1,15 @@
 ManifestFileVersion: 0
-CRC: 2365750767
+CRC: 593484732
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 297fbe9ab01adba095e147e36cd364df
+    Hash: 5111b487c14a0a1ef736937b36f3521a
   TypeTreeHash:
     serializedVersion: 2
-    Hash: d50f939b5a3e43aa0931e2f131e4bb12
+    Hash: 6cbb5fb08b74f158fae8e299ef85b863
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 5111b487c14a0a1ef736937b36f3521a
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -41,7 +44,9 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 128
   Script: {instanceID: 0}
-SerializeReferenceClassIdentifiers: []
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: XRF_InteractionController/InteractionType
 Assets:
 - Assets/TB_PrefabBundles/IOS/Example_iOS_02_Door Handle.prefab
 Dependencies: []

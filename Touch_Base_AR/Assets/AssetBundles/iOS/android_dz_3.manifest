@@ -1,12 +1,15 @@
 ManifestFileVersion: 0
-CRC: 2167090843
+CRC: 581338025
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 7be59298d3c4c617ce898a37958e2f6f
+    Hash: cd55853cc9adb05d2322d4afed157d1f
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 53784972daf3f832cc14824b1363416e
+    Hash: a447ca7f3f3ed51833d3a52818789d50
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: cd55853cc9adb05d2322d4afed157d1f
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -39,7 +42,9 @@ ClassTypes:
   Script: {fileID: 11500000, guid: f60582c3f01b7674ca91ca3245007015, type: 3}
 - Class: 115
   Script: {instanceID: 0}
-SerializeReferenceClassIdentifiers: []
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: XRF_InteractionController/InteractionType
 Assets:
-- Assets/AssetBundles/Android/DZ PACKAGE.prefab
+- Assets/_Student Imports/archive/DZ PACKAGE.prefab
 Dependencies: []

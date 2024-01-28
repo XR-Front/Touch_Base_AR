@@ -5,10 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/TB_Scenes/TouchBase_MainScene.unity
-    guid: a5e3497fdb1820746b8374acbfbfecdb
   - enabled: 1
-    path: Assets/JVB_MiniProject/Scenes/JVB_Scene.unity
-    guid: 710c8af48770abf478e4c721897f1d54
-  m_configObjects: {}
+    path: Assets/TB_Scenes/TouchBase_MainScene_2024.unity
+    guid: f315f283f599b644b9847b4fb17826c4
+  m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 8d203b4dda5c18f4fa82bbdb31cbd78b,
+      type: 2}
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: a1fb3f6a244cfe746b8e39208f788e74,
+      type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: e45d1a3af2c91a343b09baaaf6420b0e,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e1fb0b6d67a8a7745934f424eb483a21,
+      type: 2}

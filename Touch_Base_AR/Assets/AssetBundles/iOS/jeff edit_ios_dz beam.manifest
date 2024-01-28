@@ -1,12 +1,15 @@
 ManifestFileVersion: 0
-CRC: 922542175
+CRC: 4118621670
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 45ad1ac79e44f8f7fbee1e5b77aff0dd
+    Hash: a15ac08e5ff81490aae251cfd482336a
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 53784972daf3f832cc14824b1363416e
+    Hash: a447ca7f3f3ed51833d3a52818789d50
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: a15ac08e5ff81490aae251cfd482336a
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -39,7 +42,9 @@ ClassTypes:
   Script: {fileID: 11500000, guid: f60582c3f01b7674ca91ca3245007015, type: 3}
 - Class: 115
   Script: {instanceID: 0}
-SerializeReferenceClassIdentifiers: []
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: XRF_InteractionController/InteractionType
 Assets:
 - Assets/TB_PrefabBundles/IOS/Jeff Edit_iOS_DZ Beam.prefab
 Dependencies: []

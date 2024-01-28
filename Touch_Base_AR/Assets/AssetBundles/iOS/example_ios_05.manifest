@@ -1,12 +1,15 @@
 ManifestFileVersion: 0
-CRC: 2423213775
+CRC: 1801908239
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 46a136be39d92651e185f987d4d32928
+    Hash: 4bf44a40f186bcb55b4f944ba97859bd
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 2fa7ae2d93ba41153a7204a2f85da968
+    Hash: b8089915de379307fd7f78d9bba22592
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 4bf44a40f186bcb55b4f944ba97859bd
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -37,7 +40,9 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 128
   Script: {instanceID: 0}
-SerializeReferenceClassIdentifiers: []
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: XRF_InteractionController/InteractionType
 Assets:
 - Assets/TB_PrefabBundles/IOS/Example_iOS_05_Drywall.prefab
 Dependencies: []
