@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1888241583
+CRC: 681271336
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -70,4 +70,7 @@ AssetBundleManifest:
       Dependencies: {}
     Info_22:
       Name: jeff_simpletableexample
+      Dependencies: {}
+    Info_23:
+      Name: jeff in class example table
       Dependencies: {}
