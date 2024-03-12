@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1117
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 48
+  controlID: 97
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 49
+  controlID: 26
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -345,7 +345,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_Student Scenes
+    - Assets/TB_Materials
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -361,7 +361,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: fcdc0000
     m_LastClickedID: 56572
-    m_ExpandedIDs: 00000000ea620000ec620000ee620000f0620000f2620000f4620000
+    m_ExpandedIDs: 00000000ea620000ec620000ee620000f0620000f2620000f4620000f6620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -389,21 +389,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000ea620000ec620000ee620000f0620000f2620000f462000036630000
+    m_ExpandedIDs: ffffffff00000000ea620000ec620000ee620000f2620000f462000044630000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: AR Occlusion Material
+      m_OriginalName: AR Occlusion Material
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 22718
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
@@ -901,9 +901,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.11362326, y: 1.3561974, z: 0.971809}
+    m_Target: {x: -0.74040854, y: -0.38840047, z: 2.8068244}
     speed: 2
-    m_Value: {x: 0.11362326, y: 1.3561974, z: 0.971809}
+    m_Value: {x: -0.74040854, y: -0.38840047, z: 2.8068244}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -949,13 +949,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.33011976, y: 0.43197197, z: -0.17365323, w: -0.82125264}
+    m_Target: {x: 0.22338903, y: 0.1406183, z: -0.032708433, w: 0.9640894}
     speed: 2
-    m_Value: {x: -0.33011976, y: 0.431972, z: -0.17365323, w: -0.82125264}
+    m_Value: {x: 0.22191888, y: 0.14065214, z: -0.032493897, w: 0.96432006}
   m_Size:
-    m_Target: 1.0748589
+    m_Target: 0.7071069
     speed: 2
-    m_Value: 1.0748589
+    m_Value: 0.7071069
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1018,23 +1018,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 36630000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: fafaffff
+      m_ExpandedIDs: 84aeffff86aeffff88aeffffd8effffffafaffff22640000e66c0000ea6c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Quad
+        m_OriginalName: Quad
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -22474
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 9}
       m_SearchString: 
