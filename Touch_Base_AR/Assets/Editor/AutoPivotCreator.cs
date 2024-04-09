@@ -35,7 +35,7 @@ public class AutoPivotCreator : EditorWindow
         EditorGUILayout.Space(spacing);
 
 
-        string[] UpDownOptions = new string[] { "Top", "Bottom" };
+        string[] UpDownOptions = new string[] { "Top", "Center", "Bottom" };
         TopBottom = GUILayout.SelectionGrid(TopBottom, UpDownOptions, 1, EditorStyles.radioButton);
 
         EditorGUILayout.Space(spacing);
@@ -114,6 +114,11 @@ public class AutoPivotCreator : EditorWindow
         }
         else if (TopBottom == 1)
         {
+            Debug.Log("Center is selected");
+            theCenter = theCenter - new Vector3(0, 0, 0);
+        }
+        else if (TopBottom == 2)
+        {
             Debug.Log("Bottom is selected");
             theCenter = theCenter - new Vector3(0, theY, 0);
         }
@@ -139,9 +144,9 @@ public class AutoPivotCreator : EditorWindow
             Debug.Log("Back is selected");
             theCenter = theCenter + new Vector3(0, 0, theZ);
         }
-        else if (LeftRightFrontBack == 3)
+        else if (LeftRightFrontBack == 4)
         {
-            Debug.Log("Back is selected");
+            Debug.Log("Center is selected");
             theCenter = theCenter + new Vector3(0, 0, 0);
         }
 

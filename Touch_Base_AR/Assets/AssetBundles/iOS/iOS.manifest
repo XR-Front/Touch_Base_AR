@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 2202161148
+CRC: 1122023749
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -76,4 +76,7 @@ AssetBundleManifest:
       Dependencies: {}
     Info_24:
       Name: jeffinclassinteractions
+      Dependencies: {}
+    Info_25:
+      Name: rasstudents01
       Dependencies: {}
