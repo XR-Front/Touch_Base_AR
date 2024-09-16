@@ -1,0 +1,40 @@
+ManifestFileVersion: 0
+CRC: 2036793355
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 981fb6ed08295573e279fef40807c89c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e040f040957cfcfe366c88cd725c1690
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 981fb6ed08295573e279fef40807c89c
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 84
+  Script: {instanceID: 0}
+- Class: 328
+  Script: {instanceID: 0}
+- Class: 329
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/_Student Imports/VideoTest.prefab
+Dependencies: []

@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1122023749
+CRC: 1033069665
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -79,4 +79,16 @@ AssetBundleManifest:
       Dependencies: {}
     Info_25:
       Name: rasstudents01
+      Dependencies: {}
+    Info_26:
+      Name: jeffaudiotest
+      Dependencies: {}
+    Info_27:
+      Name: jeffvideotest
+      Dependencies: {}
+    Info_28:
+      Name: rasstudents02
+      Dependencies: {}
+    Info_29:
+      Name: jeffgallerywall
       Dependencies: {}
